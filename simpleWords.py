@@ -9,7 +9,7 @@ def getCount():
     words = []
     count = 0
 
-    for i in range(5):
+    for i in range(10):
         words.append(input("Введите слово: ").strip())
 
     for w in words:
