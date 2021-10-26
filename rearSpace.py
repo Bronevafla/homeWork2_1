@@ -9,10 +9,17 @@
 # мама*мыла*раму
 
 def rearSpc(string: str):
-    for i in range(len(string)):
-        str_new = string.replace(" ", "*")
+    arr = string.split()
+    arr1 = []
+    count = 0
 
-    return str_new
+    while count < len(arr) - 1:
+        arr1.append(arr[count] + "*")
+        count = count + 1
+    else:
+        arr1.append(arr[len(arr) - 1])
+
+    return ''.join(map(str, arr1))
 
 
 print(rearSpc(input("Введите строку: ")))
